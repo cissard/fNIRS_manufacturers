@@ -1,0 +1,126 @@
+Variable,Definition
+number,"study # within each publication (e.g., publication with 3 studies would include numbers 1a, 1b, and 1c)"
+study,publication #
+date,date of data entry
+authors,author names
+title,full title
+journal,journal name
+year,year of publication
+topic_raw,"Select all that apply (Listed in the order of importance in the paper):
+A) Attention; 
+B) Memory, Learning, Prediction/Expectation; 
+C) Auditory Processing/Language; 
+D) Vision (only if explicitly stated, not for every experiment that uses visual stim)
+E) Multisensory Processing;
+F) Social Cognition/Emotion; 
+G) Higher-Cognitive Processes (ex. mathematics, evaluative thinking, creative thinking, systematic decision-making, rule learning); 
+H) resting state; 
+I) Other (explain)"
+topic,primary topic only
+topic_description,"Describe the topic
+ex. attention network activation during temporal predictions"
+measures,"Select all that apply (ONLY if this measure is used to obtain the independent variable / major outcome ):
+A) fNIRS; 
+B) Behavioral; 
+C) Eye-tracking; 
+D) EEG; 
+E) fMRI; 
+F) Other (explain) "
+measures_order,"A) fNIRS was the first/only measure 
+B) fNIRS was the NOT the first measure (ex. fNIRS component done AFTER behavioral testing) "
+stimClass_raw,"Select all that apply (*for ONLY the main stimuli - not baseline videos, etc.):
+A) Visual (Still pictures); 
+B) Visual (Moving); 
+C) Audio;  
+D) Touch;
+E) Oral;
+F) None (Mind-wandering, sleeping, etc.);
+G) Other (describe) 
+H) Flash of light "
+stimClass,"Select one:
+A) Audio only
+V) Visual only
+AV) Audiovisual
+None
+Other"
+visualMoving,moving vs. static visual stimuli (leave blank if no visual stimuli)
+stimType,"Select all that apply:
+A) Faces;
+B) Places;
+C) Numbers/numerosity;
+D) Language/Letters;
+E) Social scenes;
+F) Simple Visual Stimuli (e.g., shapes, lights);
+G) Simple Auditory Stimuli (e.g., tones); 
+H) None;
+I) Other (describe)"
+design,"""Select all that apply:
+A) Block design, 
+B) Trial design; 
+C) Resting state; 
+D) Naturalistic design; 
+E) Other"""
+subComp,"Select all that apply:
+A) Within-subject (Same age); 
+B) Within-subject (Longitudinal); 
+C) Between-subject (Same age); 
+D) Between-subject (Different age)"
+location,data collection location: lab vs. hospital
+sleeping,sleeping vs. awake
+study_description,"characteristics description
+ex. one block is comprised of 4 trials, with 10-second baseline videos of fireworks between every trial; each baby sits through a maximum of 10 blocks (7 completed on average)."
+brainRegions,"Select all that apply:
+A) Frontal lobe; 
+B) Parietal lobe; 
+C) Occipital lobe; 
+D) Temporal lobe; 
+E) Parietal lobe; 
+F) Motor cortex; 
+G) Other (explain)"
+measures,"Select all that apply:
+A) Activation; 
+B) Functional connectivity (during task); 
+C) Functional connectivity (resting state); 
+D) Other (explain)"
+numberSegment_raw,"Number of study segments, where ""segment"" refers to a trial or a block that is separated by a fixation period, baseline video, etc. (for example, if there are 4 shapes corssing sequentially followed by a baseline, and this is repeated 8 times, there are 8 segments)"
+numberSegments,clean number of study segments
+durationSegment_raw,"Duration of study segments, where ""segment"" refers to a trial or a block that is separated by a fixation period, baseline video, etc. (for example, if there are 4 shapes corssing sequentially followed by a baseline and it takes 2s for each shape and the baseline is 20s, each ""segment"" is 2s x 4 = 8s)"
+durationSegment,clean duration of study segments
+completedSegment,"*If reported: state the reported number of segments (ex. ""infants completed 6.5 blocks on average"" means 6.5)"
+completedDuration,* If reported: state the reported duration (in seconds) 
+length,numberSegments x durationSegment
+age_raw,"mean age in months
+ex. 4.12 months; something like 5;15 means ""5 months and 15 days"" so please record ""5.5"""
+age,clean mean age in months
+ageRange_raw,"Age range in months: ""__ to __"" ;
+ex. 3 to 5 (group 1) & 10 to 12 (group 2)"
+ageRange,"Age range in months, or ""Newborn"" if <1 month"
+newborn,newborn vs. non-newborn
+female,# of female subjects
+femaleProp,proportion of female subjects in final sample
+characteristics,"special subject characteristics
+ex. bilingual, premature infants, etc. "
+preterm,preterm vs. full-term
+groupType,"Select one:
+td) typically developing
+td_risk) typically developing with risk factor
+clinical) clinical population"
+inclusionCriteria,"subject inclusion criteria
+ex. Infants have to be monolingual, etc. "
+manufacturer,fNIRS equipment manufacturer
+version,version/year of fNIRS equipment
+detectors,# of detectors (not sources)
+channels,total # of channels
+recruited,total # of infants recruited
+excludedBaby,"Fussy, inattentive, or unable to put the cap on, if known"
+excludedSig,"Excluded from analysis due to weak signal (ex. because of thick hair) or motion/artifact, if known"
+excludedExp,"Technical or experimenter error, if known"
+excludedOther,Explain
+finalSample_raw,Total # of subjects in the final sample
+finalSample,clean total # of subjects in the final sample
+includeOverall,"include in overall analyses (1), exclude (0)"
+includeReasons,"include in reason analyses (1), exclude (0)"
+attrition,TAR
+attritionBaby,IAR
+attritionSig,SAR
+attritionExp,EAR
